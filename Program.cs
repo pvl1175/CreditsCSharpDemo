@@ -11,10 +11,10 @@ namespace CreditsCSAPIDemo
         {
             Console.WriteLine("Credits API Simple Demo");
 
-            var publicKey = "[your public key]";
+            var publicKey = "your address";
             var publicKeyBytes = SimpleBase.Base58.Bitcoin.Decode(publicKey).ToArray();
 
-            using (var transport = new TSocket("[your node ip address]", 9090))
+            using (var transport = new TSocket("127.0.0.1", 9090))
             {
                 using (var protocol = new TBinaryProtocol(transport))
                 {
