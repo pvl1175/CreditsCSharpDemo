@@ -9,3 +9,5 @@ rm ByteCodeObject.cs
 rm MethodArgument.cs
 rm MethodDescription.cs
 rm Variant.cs
+rm ClassObject.cs
+rm object.cs
