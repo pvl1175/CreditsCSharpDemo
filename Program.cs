@@ -52,7 +52,7 @@ namespace CreditsCSAPIDemo
             transaction.Id = client.WalletTransactionsCountGet(sourceKeys.PublicKeyBytes).LastTransactionInnerId + 1;
             transaction.Source = sourceKeys.PublicKeyBytes;
             transaction.Target = targetKeys.PublicKeyBytes;
-            transaction.Amount = new Amount(1, 0);
+            transaction.Amount = new Amount({integral: 1, fraction: 0});
             transaction.Fee = new AmountCommission(Fee(0.9));
             transaction.Currency = 1;
 
